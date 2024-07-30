@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql_server
+    environment:
+      SA_PASSWORD: "Q123rewq"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+
